@@ -1,0 +1,23 @@
+{
+    "ldap": {
+        "uri": "ldap://ldap.example.com",
+        "allow_self_signed": False,
+        "bind_dn": "",
+        "bind_pw": "",
+        "user_search_base": "",
+        "user_search_filter": "",
+        "user_mapping": {
+            "mail": "mail",
+            "firstname": "givenName",
+            "lastname": "sn",
+            "password": "userPassword",
+            "quota": "MailQuota",
+            # Leave empty to not use
+            "active": "",
+            "tls_enforce_in": "",
+            "tls_enforce_out": "",
+        }
+    },
+    "mailcow_host": "mail.example.com",
+    "mailcow_api_key": ""
+}
